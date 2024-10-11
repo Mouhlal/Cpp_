@@ -31,16 +31,18 @@ int main()
 
     std::cout << somme << endl ;
 
-   /*  const int minutesPerHour = 60;
+    const int minutesPerHour = 60;
     const double PI = 3.14;  
+    // PI = 2.5; Erreur because it's a constant cannot change
 
-    if(b >= c){
+
+   /*  if(b >= c){
         std::cout << PI ;
     }
     else{
         std::cout << minutesPerHour ;
     }
- */
+  */
     return 0 ;
 
 }
