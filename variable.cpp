@@ -31,18 +31,22 @@ int main()
 
     std::cout << somme << endl ;
 
-    const int minutesPerHour = 60;
-    const double PI = 3.14;  
-    // PI = 2.5; Erreur because it's a constant cannot change
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+ string x = "20" ;
+ string y = "24" ; 
+ string year = x+y; // 2024
 
+ cout << year  << endl;
 
-   /*  if(b >= c){
-        std::cout << PI ;
-    }
-    else{
-        std::cout << minutesPerHour ;
-    }
-  */
+ string boy = "Zoro" ;
+ cout << boy.length() << endl ;
+ cout << boy[2] << endl ;
+
+ cout << "Akram Mouhlal \"Fantastic\" player in fifa  " << endl ;
+/* ----------------------------------------------------------------------------------------------------------- */
+
+cout << max(24,33) << endl  ;
+cout << min(122,42) << endl ;
     return 0 ;
 
 }
