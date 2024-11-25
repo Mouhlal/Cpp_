@@ -22,7 +22,6 @@ int main()
     show(colors,3);
     show(fruits,2);
 
-    
 
     return 0 ;
 }

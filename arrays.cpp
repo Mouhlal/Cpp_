@@ -14,7 +14,6 @@ int main(){
         cout << name[i] << endl ;
     }
 
-    
 
     return 0 ;
 }
