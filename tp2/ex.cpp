@@ -5,10 +5,11 @@ class point {
      int x ;
      int y ;
      public :
-     void initialise (int A , int b){
+     /* void initialise (int A , int b){
        x = A;
        y = b;
-    }   
+    }    */
+    void initialise(int A , int B);
     void Deplace(int d , int o){
         x = x+d;
         y = y+o;
@@ -17,6 +18,12 @@ class point {
         cout << "Le poit dans la position courante est :" << x << endl << y << endl ;
     }
 };
+
+void point::initialise(int A , int B){
+    x = A;
+    y = B;
+}
+
 
 //ex 2
 
