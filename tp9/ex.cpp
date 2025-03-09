@@ -5,26 +5,28 @@ using namespace std;
 class Employe{
     protected:
     int matricule;
+    static int id;
     string nom ;
     float salaire ;
     int age;
     public:
-    Employe(int m , string n , float s , int a){
-        matricule = m;
-        nom = n;
-        salaire = s;
-        age = a;
-    };
+   Employe(int matricule , string nom , float salaire , int age) : matricule(matricule) , nom(nom) , salaire(salaire) , age(age) {};
+   /* Employe(int matricule , string nom , float salaire , int age);
+   Employe();
+   Employe(const Employe& E); */
+
 
     void ToString(){
         cout << "Matricule : " << matricule << endl ;
         cout << "Nom : " << nom << endl ;
         cout << "Salaire : " << salaire << endl ;
         cout << "Age : " << age << endl ;
+        cout <<endl ;
     };
     virtual float GetSalaire(){
         return salaire;
     };
+
     float setSalaire(float s){
         salaire = s;
     };
@@ -41,6 +43,11 @@ class Employe{
         cout << "Age : " << age << endl ;
     };
 };
+
+/* Employe::Employe(int matricule , string nom , float salaire , int age) : matricule(id++) , nom(nom) , salaire(salaire) , age(age) {};
+Employe::Employe() : matricule(0) , nom("akram") , salaire(25000) , age(20) {};
+Employe::Employe(const Employe& E) : matricule(E.matricule) , nom(E.nom) , salaire(E.salaire) , age(E.age) {}; */
+
 class Adherent :public Employe{
     int dateAdhesion;
     float montant ;
@@ -49,6 +56,7 @@ class Adherent :public Employe{
         dateAdhesion = d;
         montant = m;
     };
+  
     float getMontant(){
         return montant;
     };
@@ -62,6 +70,7 @@ class Adherent :public Employe{
         cout << "Salaire : " << salaire - montant << endl ;
     }; 
 };
+
 
 class Manager :public Employe{
     vector<Employe> employe;

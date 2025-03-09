@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/mouhlal/BaseCpp/controle",
-      "program": "/Users/mouhlal/BaseCpp/controle/build/Debug/outDebug"
+      "cwd": ".",
+      "program": "build/Debug/outDebug"
     },
     {
       "name": "C/C++: clang++ Générer et déboguer le fichier actif",
