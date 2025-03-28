@@ -1,12 +1,9 @@
-# BasesC++
-
 # 🚀 POO - C++  
 
 Ce projet contient des programmes et algorithmes développés en **C++**, couvrant divers concepts de programmation.  
 
 📍 **Technologies utilisées :**  
 - C++  
-- Standard Library (STL)  
 - Compilateur 
 
 ---
